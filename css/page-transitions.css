@@ -1,0 +1,33 @@
+:root {
+    --blue: #1D76FC;
+    --background: #F7F5EE;
+    --orange: rgb(201, 82, 60);
+    --green: #427265;
+    --pink: #E7A5BA;
+    --brother: "brother-1816", sans-serif;
+}
+
+
+.fade-out {
+    animation: fade-out 1s forwards;
+}
+
+@keyframes fade-in {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes fade-out {
+    0% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
