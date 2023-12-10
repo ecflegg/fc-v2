@@ -13,36 +13,41 @@
 
 * {
     box-sizing: border-box;
+    /* cursor: none; */
+}
+
+
+@media (min-width: 768px){
+*{
     cursor: none;
 }
-
-.cursor {
-    width: 50px;
-    height: 50px;
-    border-radius: 100%;
-
-    transition: all 200ms ease-out;
-    position: fixed;
-    pointer-events: none;
-    left: 0;
-    top: 0;
-    background-color: var(--blue);
-
-    z-index: 120;
+    .cursor {
+        width: 50px;
+        height: 50px;
+        border-radius: 100%;
+        transition: all 200ms ease-out;
+        position: fixed;
+        pointer-events: none;
+        left: 0;
+        top: 0;
+        background-color: var(--blue);
+    
+        z-index: 120;
+    }
+    .cursor-2 {
+        width: 20px;
+        height: 20px;
+        border-radius: 100%;
+        background-color: var(--purple);
+        opacity: .3;
+        position: fixed;
+        transform: translate(-50%, -50%);
+        pointer-events: none;
+        transition: width .3s, height .3s, opacity .3s;
+        z-index: 120;
+    }
 }
 
-.cursor-2 {
-    width: 20px;
-    height: 20px;
-    border-radius: 100%;
-    background-color: var(--purple);
-    opacity: .3;
-    position: fixed;
-    transform: translate(-50%, -50%);
-    pointer-events: none;
-    transition: width .3s, height .3s, opacity .3s;
-    z-index: 120;
-}
 
 .hover {
     width: 100px;
@@ -121,7 +126,8 @@ p {
     font-weight: 600;
     border-radius: 5px;
     color: var(--background);
-    transform: all .3s ease-in-out;
+    transition: all .3s ease-in-out;
+    display: table;
 }
 
 .btn-green:hover {
@@ -154,6 +160,7 @@ p {
     font-size: 1.3rem;
     font-weight: 600;
     border-radius: 20px;
+    display: table;
 }
 
 img {
@@ -475,6 +482,7 @@ section.home-services p {
 
 section.home-services hr {
     margin: 1.6rem 1rem;
+ 
 }
 
 section.home-services .services {
@@ -485,6 +493,10 @@ section.home-services .services {
 
 section.home-services button {
     margin-left: 1rem;
+}
+section.home-services .btn-transparent {
+    margin-left: auto;
+    margin-bottom: 1rem;
 }
 
 section.home-services .home-graphic {
@@ -2171,6 +2183,7 @@ section.about-erin-container figure {
 
     article.about-top {
         height: 99vh;
+        min-height: 710px;
     }
 
     section.about-intro {
