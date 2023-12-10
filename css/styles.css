@@ -378,7 +378,7 @@ section.process-statement h3 {
 section.process-statement h4 {
     font-family: "brother-1816", sans-serif;
     font-weight: 900;
-    font-size: 2.2rem;
+    font-size: 2.1rem;
     line-height: 110%;
     color: rgb(201, 82, 60);
     text-transform: uppercase;
@@ -1905,7 +1905,7 @@ section.about-erin-container figure {
 
 
     section.process-statement h4 {
-        font-size: 9rem;
+        font-size: 6rem;
     }
 
     /* section.hero {
@@ -2241,6 +2241,13 @@ section.about-erin-container figure {
         text-align: center;
     }
 
+
+}
+
+@media (min-width: 1500px){
+    section.process-statement h4 {
+        font-size: 9rem;
+    }
 
 }
 
