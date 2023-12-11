@@ -17,10 +17,11 @@
 }
 
 
-@media (min-width: 768px){
-*{
-    cursor: none;
-}
+@media (min-width: 900px) {
+    * {
+        cursor: none;
+    }
+
     .cursor {
         width: 50px;
         height: 50px;
@@ -31,9 +32,10 @@
         left: 0;
         top: 0;
         background-color: var(--blue);
-    
+
         z-index: 120;
     }
+
     .cursor-2 {
         width: 20px;
         height: 20px;
@@ -470,20 +472,21 @@ div.sisters h6 {
 
 section.home-services {
     position: relative;
+    padding: 1rem;
 
 }
 
 section.home-services p {
     font-size: 1.4rem;
-    margin: 0 1rem 0 1rem;
+    margin: 1rem 0;
     color: var(--blue);
     font-weight: 500;
 }
 
-section.home-services hr {
+/* section.home-services hr {
     margin: 1.6rem 1rem;
  
-}
+} */
 
 section.home-services .services {
     color: black;
@@ -494,6 +497,7 @@ section.home-services .services {
 section.home-services button {
     margin-left: 1rem;
 }
+
 section.home-services .btn-transparent {
     margin-left: auto;
     margin-bottom: 1rem;
@@ -1064,6 +1068,7 @@ figure.mobile-mockup-work img {
 
 section.challenge {
     padding: 1rem;
+    flex-direction: column;
 }
 
 section.challenge h3 {
@@ -1078,12 +1083,17 @@ section.challenge h4 {
 
 div.bg-mockup {
     background-color: var(--green);
+    margin-bottom: 8rem;
 }
 
 section.keywords {
     padding: 1rem 1rem 0 1rem;
     position: relative;
     margin-bottom: 10rem;
+}
+
+div.key-btn {
+    flex-wrap: wrap;
 }
 
 section.keywords button {
@@ -1144,6 +1154,14 @@ section.full-width-img h5 {
     font-size: 3rem;
     color: var(--blue);
     margin: 1rem;
+}
+
+section.full-width-img {
+    margin-bottom: 10rem;
+}
+
+figure.icon {
+    display: none;
 }
 
 section.next-project {
@@ -1667,6 +1685,7 @@ section.about-erin-container figure {
     /* ==== WORK-SINGLE-PAGE TABLET ==== */
 
 
+
     section.hero {
         padding: 6rem 2rem;
         height: 100vh;
@@ -1756,6 +1775,14 @@ section.about-erin-container figure {
 
     section.full-width-img h5 {
         margin: 2rem;
+    }
+
+    figure.icon {
+        display: block;
+        width: 400px;
+        bottom: -30px;
+        position: absolute;
+        right: 4rem;
     }
 
 
@@ -2129,17 +2156,30 @@ section.about-erin-container figure {
 
 
     section.keywords article {
-        width: 50%;
+        width: 60%;
     }
 
+
+
     figure.triple-stalk {
-        width: 500px;
+        width: 400px;
         height: auto;
         transform: rotate(45deg);
         position: absolute;
         z-index: -10;
         opacity: .4;
         right: 12rem;
+        top: 5rem;
+    }
+
+    figure.icon2 {
+        width: 500px;
+        height: auto;
+
+        position: absolute;
+        z-index: -10;
+        opacity: .4;
+        right: 4rem;
         top: 5rem;
     }
 
@@ -2161,6 +2201,14 @@ section.about-erin-container figure {
         height: auto;
         right: 30rem;
         top: -100px;
+    }
+
+    figure.icon {
+        position: absolute;
+        width: 400px;
+        height: auto;
+        right: 6rem;
+        bottom: -250px;
     }
 
     div.contact-us {
@@ -2257,7 +2305,7 @@ section.about-erin-container figure {
 
 }
 
-@media (min-width: 1500px){
+@media (min-width: 1500px) {
     section.process-statement h4 {
         font-size: 9rem;
     }
